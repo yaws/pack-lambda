@@ -1,0 +1,18 @@
+{
+  "name": "@yaws/code",
+  "version": "1.0.0",
+  "description": "test code",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "code"
+  ],
+  "author": "joshrtay",
+  "license": "MIT",
+  "dependencies": {
+    "@f/defaults": "^1.0.1"
+  }
+}
