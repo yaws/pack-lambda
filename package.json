@@ -11,17 +11,20 @@
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
   "dependencies": {
-    "@f/thunk-to-promise": "^1.1.1",
+    "@f/compose": "^1.0.0",
+    "@f/to-promise": "^1.1.1",
     "@yaws/env-json": "^1.0.0",
     "@yaws/zip-dir": "^1.3.3",
     "babel-polyfill": "^6.3.14",
-    "co": "^4.6.0",
-    "npm": "^3.5.3"
+    "flo-map": "^1.0.1",
+    "npm": "^3.5.3",
+    "prosh": "^1.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.3.13",
+    "jszip": "^2.5.0",
     "tape": "^4.2.2"
   }
 }
