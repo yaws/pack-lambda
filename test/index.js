@@ -38,5 +38,7 @@ test('should pack lambda', (t) => {
     t.ok(zip.file('lambda.js').asText())
     t.equal(zip.file('.env.json').asText(), '{"FUNCTION_ENTRY":"lib/index.js"}')
     t.end()
+  }).catch(function (err) {
+    console.error(err.stack)
   })
 })
