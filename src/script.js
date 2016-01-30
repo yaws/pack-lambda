@@ -25,12 +25,9 @@ function * script (dir, env, opts) {
   // lambda entry
   opts.lambda = opts.lambda || 'lambda.js'
 
-  yield `${BIN}/babel ${opts.src} --out-dir ${opts.out}`
-
   yield `cd ${dir}
-  ${BIN}/npm install`
-
-  yield `cd ${dir}
+  ${BIN}/babel ${opts.src} --out-dir ${opts.out}
+  ${BIN}/npm install
   ${BIN}/npm install @f/to-promise @yaws/env-json babel-polyfill`
 
   return zipDir(contents)

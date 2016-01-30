@@ -21,12 +21,9 @@ test('should yield shell commands', (t) => {
 
   let it = packScript(CODE)
 
-  t.equal(it.next().value, `${BIN}/babel src --out-dir lib`)
-
   t.equal(it.next().value, `cd ${CODE}
-  ${BIN}/npm install`)
-
-  t.equal(it.next().value, `cd ${CODE}
+  ${BIN}/babel src --out-dir lib
+  ${BIN}/npm install
   ${BIN}/npm install @f/to-promise @yaws/env-json babel-polyfill`)
 
   t.end()
